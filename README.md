@@ -1,29 +1,82 @@
-<<<<<<< HEAD
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 🧠 AI-Interviewer
 
-## Getting Started
-First, run the development server:
+**AI-Interviewer** is a cutting-edge, AI-powered web application that simulates real-time technical interviews. Built with **Next.js 14**, **Tailwind CSS**, and powered by AI APIs, it offers a realistic mock interview experience for job seekers, students, and professionals looking to polish their interview skills.
+
+---
+
+## 🚀 Features
+
+- 🎤 **AI Interview Bot**: Get real-time questions and feedback.
+- ✍️ **Answer Input**: Respond to questions and track your performance.
+- 📊 **Performance Summary**: Analyze your strengths and weaknesses.
+- 🌐 **Modern UI/UX**: Built with Tailwind CSS & optimized for all devices.
+- 🔒 **Secure**: Modern authentication and secure sessions.
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend**: Next.js 14, React, Tailwind CSS  
+- **Backend**: Edge middleware (Next.js serverless functions)  
+- **AI Integration**: OpenAI API (or any LLM you configure)  
+- **Deployment**: Vercel (coming soon)  
+
+---
+
+## 📁 Project Structure
+
+```
+ai-interviewer/
+├── app/                  # Next.js app directory
+├── components/           # Reusable UI components
+├── lib/                  # Utility functions
+├── public/               # Static assets
+├── utils/                # AI logic and helpers
+├── middleware.js         # Route handling & auth
+├── tailwind.config.js    # Tailwind CSS config
+├── README.md             # Project documentation
+```
+
+---
+
+## 📦 Installation
 
 ```bash
+# 1. Clone the repo
+git clone https://github.com/avantika2195/AI-Interviewer.git
+cd AI-Interviewer
+
+# 2. Install dependencies
+npm install
+
+# 3. Create .env.local file and add your API keys
+touch .env.local
+# Add keys like OPENAI_API_KEY=
+
+# 4. Run the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-Visit the live Link and check our Project :-https://vercel.com/prajjwal-mishras-projects/ai-interview
+Open [http://localhost:3000](http://localhost:3000) in your browser to see the app.
 
->The platform can help job seekers to prepare more effectively for actual job interviews.
->This app is created with the help of Next.js(A full stack framework) , clerk library is used for authentication, drizzle orm for backend and GEMINI AI APIs.
->Providing your job role ,your techstack and your years of experience it will ask questions.
->Here are some basics prototype images which will help you to understand the working of the app.
-![Screenshot 2024-09-23 175523](https://github.com/user-attachments/assets/3512505a-19d0-4160-935e-f8709c72106c)
-![Screenshot 2024-09-23 175611](https://github.com/user-attachments/assets/38ca4798-4ed1-4b9c-ab56-43a16f7cb100)
-![Screenshot 2024-09-23 175651](https://github.com/user-attachments/assets/e53600cf-0844-4ce3-81ef-4725a635452c)
+---
+
+## 🌐 Live Demo
+
+Deployment on **Vercel** coming soon!
+
+---
+
+## 🤝 Contributing
+
+Pull requests are welcome! For major changes, open an issue first to discuss what you'd like to change.
+
+---
+
+## 👩‍💻 Author
+
+**Avantika Srivastava**  
+[GitHub](https://github.com/avantika2195) | [LinkedIn](https://linkedin.com/in/avantika-srivastava-23a34a221)
 
 
 
@@ -36,7 +89,3 @@ Visit the live Link and check our Project :-https://vercel.com/prajjwal-mishras-
 
 
 
-
-=======
-# AI-Interviewer
->>>>>>> 69ecc8be9b067184124a7930d3903f6dee2dbaa0
