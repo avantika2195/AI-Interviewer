@@ -6,16 +6,11 @@ const isProtectedRoute = createRouteMatcher([
 ]);
 
 export default clerkMiddleware((auth, req) => {
-  try {
-    if (isProtectedRoute(req)) {
-      auth().protect();
-    }
-  } catch (error) {
-    console.error("Middleware error:", error);
-    return new Response("Middleware Error", { status: 500 });
+  if (isProtectedRoute(req)) {
+    auth().protect();
   }
 });
 
 export const config = {
-  matcher: ["/((?!.*\\..*|_next).*)", "/", "/(api|trpc)(.*)"],
+  matcher: ["/((?!_next|favicon.ico|.*\\..*).*)", "/", "/(api|trpc)(.*)"],
 };
